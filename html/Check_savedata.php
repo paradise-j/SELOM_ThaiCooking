@@ -6,19 +6,18 @@
     try {
        
         if (isset($_POST['submit'])) {
-            $company = $_POST['company'];
-            $date = $_POST['date'];
-            $name = $_POST['name'];
-            $quan = $_POST['quan'];
-            $code = $_POST['code'];
-            $course = $_POST['course'];
-            $price = $_POST['price'];
-            $tname = $_POST['tname'];
+            $company = $_POST['company']; echo "company = ".$company."<br>";
+            $date = $_POST['date']; echo "date = ".$date."<br>";
+            $name = $_POST['name']; echo "name = ".$name."<br>";
+            $quan = $_POST['quan']; echo "quan = ".$quan."<br>";
+            $code = $_POST['code']; echo "code = ".$code."<br>";
+            $course = $_POST['course']; echo "course = ".$course."<br>";
+            $price = $_POST['price']; echo "price = ".$price."<br>";
+            $tname = $_POST['tname']; echo "tname = ".$tname;
             
             $pb = $db->query("INSERT INTO `savedata`(`com_name`, `date`, `name`, `quantity`, `code`, `course`, `price`, `teacher_name`) VALUES 
-                                                    ('$company','$date','$name','$quan','$code','$course','$price','$tname')");
+                                                    ('$company','$date','$name',$quan,'$code','$course',$price,'$tname')");
             $pb->execute();
-
 
             if ($pb) {
                 $_SESSION['success'] = "เพิ่มข้อมูลเรียบร้อย";
@@ -33,10 +32,10 @@
                         });
                     })
                 </script>";
-                header("refresh:1; url=InExType.php");
+                header("refresh:1; url=BookingData.php");
             } else {
                 $_SESSION['error'] = "เพิ่มข้อมูลเรียบร้อยไม่สำเร็จ";
-                header("location: InExType.php");
+                header("location: BookingData.php");
             }      
         }
     } catch(PDOException $e) {

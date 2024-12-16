@@ -19,7 +19,6 @@
     <meta name="description" content="" />
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -46,7 +45,7 @@
                     <div class="row mb-3">
                       <div class="col-md-3">
                           <label for="defaultSelect" class="form-label">Company name</label>
-                          <select id="defaultSelect" class="form-select" style="border-radius: 30px;" name="company">
+                          <select id="defaultSelect" class="form-select" style="border-radius: 30px;" name="company" required>
                             <option>please choose.......</option>
                             <option value="Thaiclub">Thaiclub</option>
                             <option value="klook">klook</option>
@@ -60,26 +59,26 @@
                       <div class="col-md-3">
                         <label for="defaultInput" class="col-form-label">Datetime</label>
                           <div class="col-md-10">
-                            <input class="form-control" type="date" style="border-radius: 30px;" name="date"> 
+                            <input class="form-control" type="date" style="border-radius: 30px;" name="date" required> 
                           </div>
                       </div>
                     </div>
                     <div class="row mb-3">
                       <div class="col-md-3">
                         <label for="defaultInput" class="form-label">Name</label>
-                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="name">
+                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="name" required>
                       </div>
                       <div class="col-md-1">
                         <label for="defaultInput" class="form-label">Quantity</label>
-                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="quan">
+                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="quan" required>
                       </div>
                       <div class="col-md-2">
                         <label for="defaultInput" class="form-label">Code</label>
-                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="code">
+                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="code" required>
                       </div>
                       <div class="col-md-2">
                         <label for="defaultInput" class="form-label">Course</label>
-                        <select id="defaultSelect" class="form-select" style="border-radius: 30px;" name="course">
+                        <select id="defaultSelect" class="form-select" style="border-radius: 30px;" name="course" required>
                           <option>please choose.......</option>
                           <option value="Course 1 (Monday)">Course 1 (Monday)</option>
                           <option value="Course 2 (Tuesday)">Course 2 (Tuesday)</option>
@@ -92,11 +91,11 @@
                       </div>
                       <div class="col-md-1">
                         <label for="defaultInput" class="form-label">Price</label>
-                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="price"> 
+                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="price" required>  
                       </div>
                       <div class="col-md-3">
                         <label for="defaultInput" class="form-label">Teacher's name</label>
-                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="tname">
+                        <input id="defaultInput" class="form-control" type="text" style="border-radius: 30px;" name="tname" required>
                       </div>
                     </div>
                     <button type="submit" name="submit" class="btn btn-primary" style="border-radius: 30px;">Add Booking</button>
@@ -104,31 +103,17 @@
                 </div>
               </div>
             </div>
-            <div class="content-backdrop fade"></div>
           </div>
         </div>
       </div>
-      <div class="layout-overlay layout-menu-toggle"></div>
     </div>
-
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-
     <script src="../assets/vendor/js/menu.js"></script>
-    <!-- endbuild -->
-
-    <!-- Vendors JS -->
-
-    <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
-
-    <!-- Page JS -->
-
     <script src="../assets/js/form-basic-inputs.js"></script>
-
-    <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
